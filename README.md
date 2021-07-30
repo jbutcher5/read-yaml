@@ -8,9 +8,9 @@ This action reads yaml data from a file and outputs the result.
 
 **Required** yaml file to read from.
 
-## `key`
+## `key-path`
 
-**Required** key to read data at.
+**Required** Path of keys to the value as a list.
 
 ## Outputs
 
