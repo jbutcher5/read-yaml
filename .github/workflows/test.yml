@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Test read-yaml
     steps:
+      - uses: actions/checkout@v1
+
       - name: Run read-yaml action
         id: var
         uses: KJ002/read-yaml@main
