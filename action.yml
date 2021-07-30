@@ -6,16 +6,16 @@ branding:
 
 inputs:
   file:
-    description: 'yaml file to read from'
+    description: 'YAML file to read from.'
     required: true
 
   key:
-    description: 'key to read data at.'
+    description: 'Key to read data at.'
     required: true
 
 output:
   data:
-    description: 'Data read from yaml file'
+    description: 'Data read from yaml file.'
 
 runs:
   using: 'node12'
