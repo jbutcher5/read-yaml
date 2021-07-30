@@ -24,7 +24,6 @@
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",
     "@vercel/ncc": "^0.29.0",
-    "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0"
   }
 }
