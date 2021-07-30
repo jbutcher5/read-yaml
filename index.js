@@ -7,7 +7,7 @@ const yaml = require('js-yaml');
 
 const main = async () => {
   const file = core.getInput('file');
-  const key = JSON.Parse(core.getInput('key-path'));
+  const key = JSON.parse(core.getInput('key-path'));
 
   let content = await fs.readFile(file, 'utf8');
 
