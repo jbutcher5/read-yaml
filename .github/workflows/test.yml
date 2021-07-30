@@ -9,7 +9,7 @@ jobs:
         id: var
         uses: KJ002/read-yaml@v1.1
         with:
-          file: action.yml
+          file: './action.yml'
           key: 'name'
 
       - name: Get read-yaml output
