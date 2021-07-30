@@ -10,7 +10,7 @@ inputs:
     required: true
 
   key-path:
-    description: 'Path of keys to the value as a list.'
+    description: 'Path of keys to the value as a JSON list.'
     required: true
 
 output:

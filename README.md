@@ -10,7 +10,7 @@ This action reads yaml data from a file and outputs the result.
 
 ## `key-path`
 
-**Required** Path of keys to the value as a list.
+**Required** Path of keys to the value as a JSON list.
 
 ## Outputs
 
@@ -25,4 +25,4 @@ uses: KJ002/read-yaml@v1.3
 id: yaml-data
 with:
   file: './file-to-read.yaml'
-  key: 'key-to-read'
+  key: '["key-to-read"]'
