@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Run read-yaml action
         id: var
-        uses: KJ002/read-yaml@v1.1
+        uses: ./
         with:
           file: './action.yml'
           key: 'name'
