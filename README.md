@@ -25,4 +25,4 @@ uses: KJ002/read-yaml@v1.3
 id: yaml-data
 with:
   file: './file-to-read.yaml'
-  key: '["key-to-read"]'
+  key-path: '["key-to-read"]'

@@ -12,7 +12,7 @@ jobs:
         uses: KJ002/read-yaml@main
         with:
           file: './action.yml'
-          key: [ 'name' ]
+          key-path: '["name"]'
 
       - name: Get read-yaml output
         run: echo "${{ steps.var.outputs.data }}"
