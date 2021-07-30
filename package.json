@@ -3,23 +3,28 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "@vercel/ncc": "^0.29.0",
-    "fs": "^0.0.1-security",
-    "js-yaml": "^4.1.0"
-  },
-  "devDependencies": {},
   "scripts": {
+    "build": "ncc build index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KJ002/read-yaml.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ci"
+  ],
+  "author": "James Butcher",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/KJ002/read-yaml/issues"
   },
-  "homepage": "https://github.com/KJ002/read-yaml#readme"
+  "homepage": "https://github.com/KJ002/read-yaml#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.29.0",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0"
+  }
 }
