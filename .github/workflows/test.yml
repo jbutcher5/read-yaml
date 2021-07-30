@@ -1,0 +1,16 @@
+on: [ push ]
+
+jobs:
+  test-yaml-reader:
+    runs-on: ubuntu-latest
+    name: Test read-yaml
+    steps:
+      - name: Run read-yaml action
+        id: var
+        uses: KJ002/read-yaml@v1.1
+        with:
+          file: action.yml
+          key: 'name'
+
+      - name: Get read-yaml output
+        run: echo "${{ steps.var.outputs.data }}"
