@@ -10392,21 +10392,21 @@ var __webpack_exports__ = {};
 
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
-const fs = __nccwpck_require__(5747);
+const { promises: fs } = __nccwpck_require__(5747);
 const yaml = __nccwpck_require__(1917);
 
-try {
+const main = async () => {
   const file = core.getInput('file');
   const key = core.getInput('key');
 
-  let content = fs.readFileSync(file, 'utf8');
+  let content = await fs.readFile(file, 'utf8');
 
   let yamlData = yaml.load(content);
 
   core.setOutput('data', yamlData[key]);
-} catch (e) {
-  console.log(e);
 }
+
+main().catch(err => core.setFailed(err.message));
 
 })();
 
