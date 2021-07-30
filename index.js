@@ -14,6 +14,8 @@ const main = async () => {
   let yamlData = yaml.load(content);
 
   core.setOutput('data', yamlData[key]);
+
+  console.log(yamlData[key]);
 }
 
 main().catch(err => core.setFailed(err.message));
