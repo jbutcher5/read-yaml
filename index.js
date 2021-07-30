@@ -7,9 +7,7 @@ try {
   const file = core.getInput('file');
   const key = core.getInput('key');
 
-  let content = fs.readFile(file, function (err, data) {
-    if(err) console.log(err);
-  });
+  let content = fs.readFileSync(file, 'utf8');
 
   let yamlData = yaml.load(content);
 
