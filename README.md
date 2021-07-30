@@ -20,9 +20,12 @@ Data read from YAML file.
 
 ## Example usage
 
+``` yaml
 name: Read YAML Data
 uses: KJ002/read-yaml@v1.3
 id: yaml-data
 with:
-  file: './file-to-read.yaml'
-  key-path: '["key-to-read"]'
+  file: './action.yaml'
+  key-path: '["runs", "using"]' # Access the runs key then the using key and retuns the value.
+```
+
