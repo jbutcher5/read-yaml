@@ -22,7 +22,7 @@ Data read from YAML file.
 
 ``` yaml
 name: Read YAML Data
-uses: KJ002/read-yaml@v1.3
+uses: KJ002/read-yaml@v1.5
 id: yaml-data
 with:
   file: './action.yaml'
