@@ -29,3 +29,7 @@ with:
   key-path: '["runs", "using"]' # Access the runs key then the using key and retuns the value.
 ```
 
+## Contributing and Local Development
+Check the [CONTRIBUTING](./CONTRIBUTING.md) guidelines for information on how to contribute
+to read-yaml
+
