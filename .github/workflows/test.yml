@@ -1,4 +1,4 @@
-on: [ push ]
+on: [ push, pull_request ]
 
 jobs:
   test-yaml-reader:
@@ -9,7 +9,7 @@ jobs:
 
       - name: Run read-yaml action
         id: var
-        uses: KJ002/read-yaml@main
+        uses: ./
         with:
           file: './action.yml'
           key-path: '["runs", "using"]'

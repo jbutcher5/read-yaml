@@ -9,10 +9,6 @@ inputs:
     description: 'YAML file to read from.'
     required: true
 
-  key-path:
-    description: 'Path of keys to the value as a JSON list.'
-    required: true
-
 output:
   data:
     description: 'Data read from YAML file.'
