@@ -18,7 +18,7 @@ This action reads yaml data from a file and outputs the result.
 
 ``` yaml
 name: Read YAML Data
-uses: KJ002/read-yaml@v1.5
+uses: KJ002/read-yaml@1.5
 id: yaml-data
 with:
   file: './action.yaml'
