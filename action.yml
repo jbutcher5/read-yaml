@@ -1,17 +1,21 @@
 name: 'Read yaml'
-description: 'Read data from a yaml file'
+description: 'Read data from a YAML file'
 branding:
   icon: book
   color: yellow  
 
 inputs:
   file:
-    description: 'YAML file to read from.'
+    description: 'YAML file to read from'
+    required: true
+    
+  key-path:
+    description: 'List of keys to follow'
     required: true
 
 output:
   data:
-    description: 'Data read from YAML file.'
+    description: 'Data read from YAML file'
 
 runs:
   using: 'node12'
