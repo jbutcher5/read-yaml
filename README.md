@@ -18,12 +18,24 @@ Input and output variables used by read-yaml
 ## Example usage
 
 ``` yaml
-name: Read YAML Data
-uses: KJ002/read-yaml@1.5
-id: yaml-data
-with:
-  file: './action.yaml'
-  key-path: '["runs", "using"]' # Access the runs key then the using key and retuns the value.
+on: [ push, pull_request ]
+
+jobs:
+  test-yaml-reader:
+    runs-on: ubuntu-latest
+    name: Test read-yaml
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Run read-yaml action
+        id: yaml-data
+        uses: KJ002/read-yaml@main      # You may wish to replace main with a version tag such as '1.5' etc.
+         with:
+          file: './action.yml'          # File to read from
+          key-path: '["runs", "using"]' # Access the runs key then the using key and retuns the value.
+
+      - name: Display read-yaml output
+        run: echo "${{ steps.yaml-data.outputs.data }}"
 ```
 
 ## Contributing and Local Development
