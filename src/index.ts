@@ -16,11 +16,8 @@ const run = async () => {
             return
         }
 
-        for (let i = 0; i < keys.length; i++) {
-            yamlData = (yamlData as any)[keys[i]]
-        }
-
-        core.setOutput('data', yamlData)
+        let output = keys.reduce((dict, key) => dict[key], yamlData)
+        core.setOutput('data', output)
     } catch (error) {
         core.setFailed((error as Error).message)
     }
