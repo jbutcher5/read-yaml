@@ -3,12 +3,16 @@
 
 This action reads yaml data from a file and outputs the result.
 
-## Inputs
+## IO
+
+Input and output variables used by read-yaml
+
+### Inputs
 - **`file` Required** yaml file to read from.
 
 - **`key-path` Required** Path of keys to the value as a JSON list.
 
-## Outputs
+### Outputs
 - **`data`** Data read from YAML file.
 
 ## Example usage
