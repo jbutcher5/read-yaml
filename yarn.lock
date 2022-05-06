@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@actions/core@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.7.0.tgz#f179a5a0bf5c1102d89b8cf1712825e763feaee4"
-  integrity sha512-7fPSS7yKOhTpgLMbw7lBLc1QJWvJBBAgyTX2PEhagWcKK8t0H8AKCoPMfnrHqIm5cRYH4QFPqD1/ruhuUE7YcQ==
+"@actions/core@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.8.0.tgz#5d98ff672b8ab73b718a939599c02f05c12755ad"
+  integrity sha512-XirM+Zo/PFlA+1h+i4bkfvagujta+LIM2AOSzPbt8JqXbbuxb1HTB+FqIyaKmue9yiCx/JIJY6pXsOl3+T8JGw==
   dependencies:
     "@actions/http-client" "^1.0.11"
 
@@ -141,7 +141,7 @@
   resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-4.0.5.tgz#738dd390a6ecc5442f35e7f03fa1431353f7e138"
   integrity sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==
 
-"@types/node@^17.0.31":
+"@types/node@^17.0.29":
   version "17.0.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.31.tgz#a5bb84ecfa27eec5e1c802c6bbf8139bdb163a5d"
   integrity sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==
