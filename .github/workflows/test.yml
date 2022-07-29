@@ -8,11 +8,21 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Run read-yaml action
-        id: var
+        id: using
         uses: ./
         with:
           file: './action.yml'
           key-path: '["runs", "using"]'
-
-      - name: Get read-yaml output
-        run: echo "${{ steps.var.outputs.data }}"
+      
+      - name: Run read-yaml action
+        id: desc
+        uses: ./
+        with:
+          file: './action.yml'
+          key-path: '["output", "data", "description"]'
+          
+      - name: Get read-yaml using output
+        run: echo "${{ steps.using.outputs.data }}"
+        
+      - name: Get read-yaml description output
+        run: echo "${{ steps.desc.outputs.data }}"
