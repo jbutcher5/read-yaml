@@ -20,9 +20,8 @@ jobs:
         with:
           file: './action.yml'
           key-path: '["output", "data", "description"]'
-          
-      - name: Get read-yaml using output
-        run: echo "${{ steps.using.outputs.data }}"
         
-      - name: Get read-yaml description output
-        run: echo "${{ steps.desc.outputs.data }}"
+      - name: Get read-yaml outputs
+        run: |
+          echo '${{ steps.using.outputs.data }}'
+          echo '${{ steps.desc.outputs.data }}'
