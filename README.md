@@ -29,7 +29,7 @@ jobs:
 
       - name: Run read-yaml action
         id: yaml-data
-        uses: KJ002/read-yaml@main      # You may wish to replace main with a version tag such as '1.6' etc.
+        uses: jbutcher5/read-yaml@main      # You may wish to replace main with a version tag such as '1.6' etc.
         with:
           file: './action.yml'          # File to read from
           key-path: '["runs", "using"]' # Access the runs key then the using key and retuns the value.
