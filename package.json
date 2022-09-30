@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/KJ002/read-yaml#readme",
   "dependencies": {
-    "@actions/core": "^1.9.1",
+    "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.0",
 
     "@vercel/ncc": "^0.34.0",
