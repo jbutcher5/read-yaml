@@ -16,8 +16,8 @@ const run = async () => {
       return
     }
 
-    let output = keys.reduce((dict, key) => dict[key], yamlData)
-    core.saveState('data', output)
+    let data = keys.reduce((dict, key) => dict[key], yamlData)
+    core.saveState('data', data)
   } catch (error) {
     core.setFailed((error as Error).message)
   }
