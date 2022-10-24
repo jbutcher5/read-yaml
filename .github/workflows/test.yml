@@ -19,7 +19,7 @@ jobs:
         uses: ./
         with:
           file: './action.yml'
-          key-path: '["output", "data", "description"]'
+          key-path: '["inputs", "key-path", "description"]'
         
       - name: Get read-yaml outputs
         run: |
